@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyWebb.Models", "AcademyWebb.Models\AcademyWebb.Models.csproj", "{B48E7D0A-3FAC-451F-A444-65836DD8DDD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyWeb.Models", "AcademyWebb.Models\AcademyWeb.Models.csproj", "{B48E7D0A-3FAC-451F-A444-65836DD8DDD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AcademyWeb.DataProvider", "AcademyWeb.DataProvider", "{1C324DED-6659-4117-8550-13EBAC14D08D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProvider.Abstractions", "DataProvider.Abstractions\DataProvider.Abstractions.csproj", "{4D576DDA-BADF-4C7B-AF17-978346B5381D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProvider.Models", "DataProvider.Models\DataProvider.Models.csproj", "{0FE594AC-DA66-4EA7-9B76-E257A12075AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProvider.Engine", "DataProvider.Engine\DataProvider.Engine.csproj", "{5D65B754-26DC-4DC7-8F99-5B414D3064FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyWeb.Abstractions", "AcademyWeb.Abstractions\AcademyWeb.Abstractions.csproj", "{FA36CEE6-DA95-4221-B108-1F616342FB79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyWeb.Engine", "AcademyWeb.Engine\AcademyWeb.Engine.csproj", "{A6778966-4C90-4DC5-B190-5CAC0CB7805C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +27,34 @@ Global
 		{B48E7D0A-3FAC-451F-A444-65836DD8DDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B48E7D0A-3FAC-451F-A444-65836DD8DDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B48E7D0A-3FAC-451F-A444-65836DD8DDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D576DDA-BADF-4C7B-AF17-978346B5381D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D576DDA-BADF-4C7B-AF17-978346B5381D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D576DDA-BADF-4C7B-AF17-978346B5381D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D576DDA-BADF-4C7B-AF17-978346B5381D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FE594AC-DA66-4EA7-9B76-E257A12075AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE594AC-DA66-4EA7-9B76-E257A12075AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE594AC-DA66-4EA7-9B76-E257A12075AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE594AC-DA66-4EA7-9B76-E257A12075AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D65B754-26DC-4DC7-8F99-5B414D3064FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D65B754-26DC-4DC7-8F99-5B414D3064FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D65B754-26DC-4DC7-8F99-5B414D3064FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D65B754-26DC-4DC7-8F99-5B414D3064FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA36CEE6-DA95-4221-B108-1F616342FB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA36CEE6-DA95-4221-B108-1F616342FB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA36CEE6-DA95-4221-B108-1F616342FB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA36CEE6-DA95-4221-B108-1F616342FB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6778966-4C90-4DC5-B190-5CAC0CB7805C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6778966-4C90-4DC5-B190-5CAC0CB7805C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6778966-4C90-4DC5-B190-5CAC0CB7805C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6778966-4C90-4DC5-B190-5CAC0CB7805C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4D576DDA-BADF-4C7B-AF17-978346B5381D} = {1C324DED-6659-4117-8550-13EBAC14D08D}
+		{0FE594AC-DA66-4EA7-9B76-E257A12075AD} = {1C324DED-6659-4117-8550-13EBAC14D08D}
+		{5D65B754-26DC-4DC7-8F99-5B414D3064FF} = {1C324DED-6659-4117-8550-13EBAC14D08D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B29AF596-8D3F-4079-BF3B-D1521989EC4F}
