@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyWeb.Models", "AcademyWebb.Models\AcademyWeb.Models.csproj", "{B48E7D0A-3FAC-451F-A444-65836DD8DDD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademyWeb.Models", "AcademyWebb.Models\AcademyWeb.Models.csproj", "{B48E7D0A-3FAC-451F-A444-65836DD8DDD7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AcademyWeb.DataProvider", "AcademyWeb.DataProvider", "{1C324DED-6659-4117-8550-13EBAC14D08D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProvider.Abstractions", "DataProvider.Abstractions\DataProvider.Abstractions.csproj", "{4D576DDA-BADF-4C7B-AF17-978346B5381D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataProvider.Abstractions", "DataProvider.Abstractions\DataProvider.Abstractions.csproj", "{4D576DDA-BADF-4C7B-AF17-978346B5381D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProvider.Models", "DataProvider.Models\DataProvider.Models.csproj", "{0FE594AC-DA66-4EA7-9B76-E257A12075AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataProvider.Models", "DataProvider.Models\DataProvider.Models.csproj", "{0FE594AC-DA66-4EA7-9B76-E257A12075AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProvider.Engine", "DataProvider.Engine\DataProvider.Engine.csproj", "{5D65B754-26DC-4DC7-8F99-5B414D3064FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataProvider.Engine", "DataProvider.Engine\DataProvider.Engine.csproj", "{5D65B754-26DC-4DC7-8F99-5B414D3064FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyWeb.Abstractions", "AcademyWeb.Abstractions\AcademyWeb.Abstractions.csproj", "{FA36CEE6-DA95-4221-B108-1F616342FB79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademyWeb.Abstractions", "AcademyWeb.Abstractions\AcademyWeb.Abstractions.csproj", "{FA36CEE6-DA95-4221-B108-1F616342FB79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyWeb.Engine", "AcademyWeb.Engine\AcademyWeb.Engine.csproj", "{A6778966-4C90-4DC5-B190-5CAC0CB7805C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademyWeb.Engine", "AcademyWeb.Engine\AcademyWeb.Engine.csproj", "{A6778966-4C90-4DC5-B190-5CAC0CB7805C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AcademyWeb.Database", "AcademyWeb.Database", "{BFDAFEFA-C095-48F9-949A-EEA557BA2ACD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
