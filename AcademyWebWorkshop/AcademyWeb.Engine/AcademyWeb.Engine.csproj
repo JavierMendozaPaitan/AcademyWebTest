@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AcademyWeb.Abstractions\AcademyWeb.Abstractions.csproj" />
+    <ProjectReference Include="..\DataProvider.Abstractions\DataProvider.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>
