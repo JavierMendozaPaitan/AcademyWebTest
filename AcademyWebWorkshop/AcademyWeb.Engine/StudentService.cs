@@ -17,6 +17,21 @@ namespace AcademyWeb.Engine
         {
             _studentRepository = studentRepository;
         }
+
+        public List<StudentAcademy> GetStudents()
+        {
+            var students = new List<StudentAcademy>();
+            students = _studentRepository.GetStudents().Select(x => new StudentAcademy
+            {
+                Id = x.Id,
+                Email = x.Email,
+                Name = x.StudentName,
+                StudentLevel = x.StudentLevelId.ToString()
+            }).ToList();
+
+            return students;
+        }
+
         public List<StudentAcademy> GetStudentsInTraining()
         {
             var students = new List<StudentAcademy>();

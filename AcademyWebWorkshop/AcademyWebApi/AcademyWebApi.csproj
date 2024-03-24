@@ -15,6 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AcademyWeb.Abstractions\AcademyWeb.Abstractions.csproj" />
+    <ProjectReference Include="..\AcademyWeb.Engine\AcademyWeb.Engine.csproj" />
     <ProjectReference Include="..\DataProvider.Abstractions\DataProvider.Abstractions.csproj" />
     <ProjectReference Include="..\DataProvider.Engine\DataProvider.Engine.csproj" />
   </ItemGroup>

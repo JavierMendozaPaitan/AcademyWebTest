@@ -1,4 +1,6 @@
-﻿using DataProvider.Abstractions;
+﻿using AcademyWeb.Abstractions;
+using AcademyWeb.Engine;
+using DataProvider.Abstractions;
 using DataProvider.Engine;
 
 namespace AcademyWebApi.Extensions
@@ -9,7 +11,9 @@ namespace AcademyWebApi.Extensions
         {
             services.AddSingleton<IStudentRepository, StudentRepository>();
             services.AddSingleton<ICourseRepository, CourseRepository>();
-            services.AddSingleton<ITeacherRepository, ITeacherRepository>();
+            //services.AddSingleton<ITeacherRepository, ITeacherRepository>();
+
+            services.AddSingleton<IStudentService, StudentService>();
 
             return services;
         }

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AcademyWeb.Abstractions;
+using DataProvider.Models;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,24 +10,32 @@ namespace AcademyWebApi.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
+        private readonly IStudentService _studentService;
+        public StudentController(IStudentService studentService)
+        {
+            _studentService = studentService;
+        }
         // GET: api/<StudentController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult GetStudents()
         {
-            return new string[] { "value1", "value2" };
+            var list = _studentService.GetStudents();
+
+            return Ok(list);
         }
 
         // GET api/<StudentController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
+        public IActionResult GetStudentById(int id)
+        {   
+            return Ok();   
         }
 
         // POST api/<StudentController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult AddStudent([FromBody] Student student)
         {
+            return Ok();
         }
 
         // PUT api/<StudentController>/5
