@@ -24,6 +24,12 @@ namespace AcademyWebApi.Controllers
             return Ok(list);
         }
 
+        [HttpGet("StudentsInTraining")]
+        public IActionResult GetStudentsInTraining()
+        {
+            return Ok();
+        }
+
         // GET api/<StudentController>/5
         [HttpGet("{id}")]
         public IActionResult GetStudentById(int id)
