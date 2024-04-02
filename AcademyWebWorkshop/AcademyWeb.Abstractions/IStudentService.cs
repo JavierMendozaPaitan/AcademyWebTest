@@ -12,5 +12,6 @@ namespace AcademyWeb.Abstractions
         List<StudentAcademy> GetStudentsInTraining();
         List<StudentAcademy> GetStudents();
         void AddStudent(StudentAcademy student);
+        void RemoveStudent(int id);
     }
 }

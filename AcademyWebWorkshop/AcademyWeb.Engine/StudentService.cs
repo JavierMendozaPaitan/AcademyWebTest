@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AcademyWeb.Abstractions;
 using AcademyWeb.Models;
 using DataProvider.Abstractions;
+using DataProvider.Models;
 
 namespace AcademyWeb.Engine
 {
@@ -16,6 +17,17 @@ namespace AcademyWeb.Engine
             IStudentRepository studentRepository) 
         {
             _studentRepository = studentRepository;
+        }
+
+        public void AddStudent(StudentAcademy student)
+        {
+            var studentRepository = new Student 
+            {
+                StudentName = student.Name,
+                Email = student.Email,
+                StudentLevelId = Convert.ToInt32(student.StudentLevel)                
+            };
+            _studentRepository.InsertStudent(studentRepository);
         }
 
         public List<StudentAcademy> GetStudents()
@@ -49,6 +61,11 @@ namespace AcademyWeb.Engine
             }
 
             return students;
+        }
+
+        public void RemoveStudent(int id)
+        {
+            _studentRepository.DeleteStudent(id);
         }
     }
 }

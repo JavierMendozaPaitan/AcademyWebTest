@@ -21,7 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AcademyWeb.Database", "Acad
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AcademyTest.Database", "AcademyTest.Database\AcademyTest.Database.sqlproj", "{FB3C78B7-0D38-4937-851C-CD33037675C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyWebApi", "AcademyWebApi\AcademyWebApi.csproj", "{905D2A66-614B-414A-AE84-65135FF63B68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcademyWebApi", "AcademyWebApi\AcademyWebApi.csproj", "{905D2A66-614B-414A-AE84-65135FF63B68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyWebAppMvc", "AcademyWebAppMvc\AcademyWebAppMvc.csproj", "{EBFAD78A-457E-494F-86FB-C0D1CB65517A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{905D2A66-614B-414A-AE84-65135FF63B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{905D2A66-614B-414A-AE84-65135FF63B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{905D2A66-614B-414A-AE84-65135FF63B68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBFAD78A-457E-494F-86FB-C0D1CB65517A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFAD78A-457E-494F-86FB-C0D1CB65517A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFAD78A-457E-494F-86FB-C0D1CB65517A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFAD78A-457E-494F-86FB-C0D1CB65517A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
 ﻿using AcademyWeb.Abstractions;
+using AcademyWeb.Models;
 using DataProvider.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,7 +28,9 @@ namespace AcademyWebApi.Controllers
         [HttpGet("StudentsInTraining")]
         public IActionResult GetStudentsInTraining()
         {
-            return Ok();
+            var list = _studentService.GetStudentsInTraining();
+
+            return Ok(list);
         }
 
         // GET api/<StudentController>/5
@@ -39,8 +42,10 @@ namespace AcademyWebApi.Controllers
 
         // POST api/<StudentController>
         [HttpPost]
-        public IActionResult AddStudent([FromBody] Student student)
+        public IActionResult AddStudent([FromBody] StudentAcademy student)
         {
+            _studentService.AddStudent(student);
+
             return Ok();
         }
 
@@ -52,8 +57,11 @@ namespace AcademyWebApi.Controllers
 
         // DELETE api/<StudentController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            _studentService.RemoveStudent(id);
+
+            return Ok();            
         }
     }
 }
